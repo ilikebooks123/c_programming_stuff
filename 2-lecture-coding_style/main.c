@@ -2,7 +2,7 @@
 //stdio - standard(std) input out put library
 
 //what is sequence of code execution
-//frokm top to bottom
+//from top to bottom
 
 //int main(){ is called main function
 
