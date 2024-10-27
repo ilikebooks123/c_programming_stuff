@@ -8,9 +8,13 @@ int main(){
     //printf("num1 is:%d\n", num1);
     //printf("num2 is:%d", num2);
 
-    int temp = num1;
-    num1 = num2;
-    num2 = temp;
+    //int temp = num1;
+    //num1 = num2;
+    //num2 = temp;
+    //printf("num1 after swap is:%d\n", num1);
+    //printf("num2 after swap is:%d", num2);
+    num2 = num2 - num1;
+    num1 = num2 + num1;
     printf("num1 after swap is:%d\n", num1);
     printf("num2 after swap is:%d", num2);
 
