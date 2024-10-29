@@ -1,0 +1,1 @@
+//i think printf("x=%d, a=%d, b=%d, c=%d\n", x, a, b, c) will print out x=13 a=10, b=12, c=120 
