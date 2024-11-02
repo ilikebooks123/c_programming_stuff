@@ -8,6 +8,6 @@ int main(){
     bool a3 = 15;
     bool a4 = 20;
 
-    printf("%d\n%d\n%d\n%d\n%d\n", a1, a2, a3, a4);
+    printf("%d\n%d\n%d\n%d\n", a1, a2, a3, a4);
 
 }
