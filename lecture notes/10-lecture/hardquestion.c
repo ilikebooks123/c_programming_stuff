@@ -3,12 +3,10 @@
 int main(){
 
     int a;
-    int x;
     printf("input a positive integer:");
 
     int return_value = scanf("%d", &a);
-    
-    if(return_value<=0){
+    if(return_value==0){
         printf("Error");
      }
 
@@ -16,7 +14,7 @@ int main(){
         printf("you have inputed an odd number");
     }
     
-    if (a%2==x+1==1){
+    if (a%2==0 && a%2==!return_value){
         printf("you have inputed an even number");
     }
 
