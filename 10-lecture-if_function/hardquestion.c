@@ -4,11 +4,15 @@ int main(){
 
     int a;
     printf("input a positive integer:");
-
     int return_value = scanf("%d", &a);
+    
+    if(a<0){
+        printf("Error:You have inputed a negative value, please input postive integer.");
+    }
+    
     if(return_value==0){
-        printf("Error");
-     }
+        printf("Error:You have entered an invaild input, please input postive integer.");
+    }
 
     if (a%2==1){
         printf("you have inputed an odd number");
