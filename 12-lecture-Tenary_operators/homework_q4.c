@@ -5,7 +5,7 @@ int main() {
  if(age < 18)
     printf("child\n");
  
-    else if(18<= age <26)
+    else if(18 <= age && age < 26)
     printf("teen\n");
 
     else{

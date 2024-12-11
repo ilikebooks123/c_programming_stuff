@@ -7,11 +7,11 @@ int main(){
     int return_value = scanf("%d", &a);
     
     if(a<0){
-        printf("Error:You have inputed a negative value, please input postive integer.");
+        printf("Error:You have inputed a negative value, please input a postive integer.");
     }
     
     if(return_value==0){
-        printf("Error:You have entered an invaild input, please input postive integer.");
+        printf("Error:You have entered an invaild input, please input a postive integer.");
     }
 
     if (a%2==1){
