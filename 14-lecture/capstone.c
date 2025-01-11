@@ -2,7 +2,7 @@
 
 int main(){
 
-    int onethroughfour = 0; 
+    int onethroughfour; 
     int balance = 0;
     int deposited;
     int withdraw;
@@ -71,6 +71,8 @@ int main(){
             
             if (returnvalue!=1){
                 printf("Please enter an integer bewteen 1 and 4");
+                
+                //return 0;
                 
                 onethroughfour = 0;
             }
