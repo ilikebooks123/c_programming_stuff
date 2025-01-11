@@ -2,7 +2,7 @@
 
 int main(){
 
-    int onethroughfour; 
+    int onethroughfour = 0; 
     int balance = 0;
     int deposited;
     int withdraw;
@@ -16,13 +16,19 @@ int main(){
     
     while (getchar() != '\n');
     
-    if (onethroughfour==0){
-            printf("Please select an operation:\n1. Check Balance\n2. Deposite\n3. Withdraw\n4. Exit\nEnter your choice(1-4):\n");
-            onethroughfour++;
-        }
-    
-    while (onethroughfour<4){
+    if (returnvalue!=1){
+        printf("Please enter an integer bewteen 1 and 4\n");
         
+        onethroughfour = 0;
+    }
+    
+    if (onethroughfour>4 || onethroughfour<0){
+        printf("Please enter an integer between 1 and 4\n");    
+    }
+    
+
+    while (onethroughfour!=4){
+
         if (onethroughfour==1){
             printf("Your current balance is:%d\n", balance);
             --onethroughfour;
@@ -59,9 +65,21 @@ int main(){
         }
         
         else if (onethroughfour==0){
-            printf("Please select an operation:\n1. Check Balance\n2. Deposite\n3. Withdraw\n4. Exit\nEnter your choice(1-4):\n");
-            scanf("%d", &onethroughfour);
+            printf("\nPlease select an operation:\n1. Check Balance\n2. Deposite\n3. Withdraw\n4. Exit\nEnter your choice(1-4):");
+            onethroughfour++;
+            int returnvalue = scanf("%d", &onethroughfour);
+            
+            if (returnvalue!=1){
+                printf("Please enter an integer bewteen 1 and 4");
+                
+                onethroughfour = 0;
+            }
         }
+        if (onethroughfour>4 || onethroughfour<0){
+        printf("Please enter an integer between 1 and 4");
+        onethroughfour = 0;   
+    }
+    
     }
 
     if(onethroughfour==4){
