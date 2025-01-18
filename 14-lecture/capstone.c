@@ -21,13 +21,8 @@ int main(){
         
         onethroughfour = 0;
     }
-    
-    if (onethroughfour>4 || onethroughfour<0){
-        printf("Please enter an integer between 1 and 4\n");    
-    }
-    
 
-    while (onethroughfour!=4){
+    while (onethroughfour!=4 || onethroughfour!=0){
 
         if (onethroughfour==1){
             printf("Your current balance is:%d\n", balance);
@@ -66,7 +61,6 @@ int main(){
         
         else if (onethroughfour==0){
             printf("\nPlease select an operation:\n1. Check Balance\n2. Deposite\n3. Withdraw\n4. Exit\nEnter your choice(1-4):");
-            onethroughfour++;
             int returnvalue = scanf("%d", &onethroughfour);
             
             if (returnvalue!=1){
@@ -77,10 +71,11 @@ int main(){
                 onethroughfour = 0;
             }
         }
+        
         if (onethroughfour>4 || onethroughfour<0){
         printf("Please enter an integer between 1 and 4");
         onethroughfour = 0;   
-    }
+        }
     
     }
 
