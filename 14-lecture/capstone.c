@@ -14,7 +14,7 @@ int main(){
     
     int returnvalue = scanf("%d", &onethroughfour);
     
-    while (getchar() != '\n');
+    //while (getchar() != '\n');
     
     if (returnvalue!=1){
         printf("Please enter an integer bewteen 1 and 4\n");
