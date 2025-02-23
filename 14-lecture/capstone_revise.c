@@ -14,7 +14,7 @@ int main(){
         printf("\n------------------------------------\n");
         printf("      Welcome to the simple bank\n");
         printf("------------------------------------\n");
-        printf("Please select an operation:\n1. Check Balance\n2. Deposite\n3. Withdraw\n4. Exit\nEnter your choice(1-4):");
+        printf("Please select an operation:\n1. Check Balance\n2. Deposit\n3. Withdrawal\n4. Exit\nEnter your choice(1-4):");
         
         return_value = scanf ("%d", &choice);
         

@@ -2,16 +2,12 @@
 
 int main(){
 
-    int a = 0;
-    int adding = 0;
-    while(a<=5){
-        a++;
-        adding = a-1 + a;
+    int count = 1;
+    int sum = 0;
 
+    while (count < 10){
+        sum += count;
+        //printf("current sum: %d\n", sum)
     }
     
-    printf("%d", adding);
-    
-    return 0;
-
 }

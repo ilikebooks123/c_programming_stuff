@@ -4,7 +4,7 @@ int main(){
 
     int a = 5;
     float b = 2.5;
-    //int 'a' is implicitly conver6ted to float
+    //int 'a' is implicitly converted to float
     float result = a + b;//float 'a + b' is converted to float
 
     printf("a + b result:%f\n", result);
