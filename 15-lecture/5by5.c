@@ -17,10 +17,6 @@ int main(){
             if (j == 5 ){
                 printf("\n");
             }
-            
-            //if (j == 7 ){
-                //printf("\n");
-            //}
         
             if (j == 6 ){
                 printf("   *\n");
