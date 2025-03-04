@@ -11,10 +11,8 @@ int main(){
             if (j >= 1 && j <= 7){
                 printf("*");
             }
-            
-            
         
-            if (j == 5 ){
+            if (j == 5  ){
                 printf("\n");
             }
         

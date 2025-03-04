@@ -4,8 +4,13 @@ int main(){
     int i = 1;
     int j = 1;
 
-    int row = 2;
-    int col = 2;
+    int row;
+    int col;
+
+    printf("Number of rows:");
+    scanf("%d", &row);
+    printf("Number of columns:");
+    scanf("%d", &col);
 
     for (i = 1; i <= row ; i++){
         
