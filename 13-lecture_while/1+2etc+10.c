@@ -7,7 +7,8 @@ int main(){
 
     while (count < 10){
         sum += count;
-        //printf("current sum: %d\n", sum)
+        printf("current sum: %d\n", sum);
     }
     
+    return 0;
 }
