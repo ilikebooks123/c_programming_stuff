@@ -6,6 +6,8 @@ int main(){
     bool run = true;
     int choice;
     int return_value;
+    int return_valueD;
+    int return_valueW;
     int balance = 0;
     int withdrawal;
     int deposite;
@@ -28,17 +30,26 @@ int main(){
 
         else if (choice == 2 ){
             printf("Enter Deposit amount:\n");
-            scanf("%d", &deposite);
+            return_valueD = scanf("%d", &deposite);
+            if (return_valueD!=1){
+                printf("you have entered a non-integer character please enter an integer bewteen 1 and 4\n");
+            }
+            
+            else{
             balance = balance + deposite;
             printf("Depost successful!\n");
             printf("Your new balance is:%d\n", balance);
+            }
         }
         
         else if (choice == 3){
             printf("enter withdrawal amount:\n");
-            scanf("%d", &withdrawal);
+            return_valueW = scanf("%d", &withdrawal);
+            if (return_valueW!=1){
+                printf("you have entered a non-integer character please enter an integer bewteen 1 and 4\n");
+            }
             
-            if (balance<withdrawal){
+            else if (balance<withdrawal){
                 printf("Insufficient balance. Withdrawal failed.\n");
             }
 
