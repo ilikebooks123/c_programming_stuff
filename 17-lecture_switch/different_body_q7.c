@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-     int BMI;
+     float BMI;
      int average;
      int weight;
      float height;
