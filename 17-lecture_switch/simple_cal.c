@@ -35,7 +35,7 @@ int main(){
         break;
         
     default:
-        printf("please in put one of the following: +, -, *, /");
+        printf("please input one of the following: +, -, *, /");
         return 0;
         break;
     }
