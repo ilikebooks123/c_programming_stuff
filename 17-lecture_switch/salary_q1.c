@@ -10,6 +10,7 @@ int main(){
     scanf("%d", &hours);
     printf("Enter hourly wage:");
     scanf("%d", &wage);
+    
     if (hours <= 40){
         multi = 1;
     }
@@ -19,19 +20,20 @@ int main(){
     }
     
     switch (multi){
-    case 1:
-        salary = wage*hours;
-        break;
-    
+        case 1:
+            salary = wage*hours;
+            break;
+        
         case 2:
-        salary = wage*hours*1.5;
-        break;
-    
-    default:
-        printf("idk what you did");
-        break;
+            salary = wage*hours*1.5;
+            break;
+        
+        default:
+            printf("idk what you did");
+            break;
     }
 
     printf("Salary: %d", salary);
 
+    return 0;
 }
