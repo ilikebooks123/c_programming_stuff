@@ -14,16 +14,16 @@ int main(){
      BMI = weight/(height*height);
 
       if (BMI < 18.5){
-           average = 1;}
+          average = 1;}
     
       else if (18.5 <= BMI < 24.9){
-           average = 2;}
+          average = 2;}
     
       else if (25 <= BMI < 29.9){
-           average = 3;}
+          average = 3;}
     
       else{
-           average = 4;}
+          average = 4;}
 
      switch (average){
           case 1:
