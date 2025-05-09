@@ -2,6 +2,8 @@
 
 int main(){
     char letter;
+    char print1 = 65;
+    char print2 = letter;
     char space = 32;
     char A = 65;
     int number_of_spaces;
@@ -15,18 +17,18 @@ int main(){
             number_of_spaces = letter - 65;
             printf(" ");
         }
-        
+        number_of_spaces--;
     }
-
+    
     for (char i = 65; i <= letter; i++){
         printf("%c", i);
-        //letter--;
-        
     }
 
-
-
-
+    for (char i = 65; i <= letter; letter--){
+        printf("%c", letter);
+    }
+    
+    return 0;
 }
 
     

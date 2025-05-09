@@ -24,7 +24,10 @@ int main(){
         if (i == 65){
             printf("%c", print1);
         }
-        printf("");
+        if (i == 66){
+            printf
+        }
+        
 
     }
     

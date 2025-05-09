@@ -22,9 +22,6 @@ int main(){
         num1 = total;
     }
     
-
-    
-
-
+    return 0;
 
 }
