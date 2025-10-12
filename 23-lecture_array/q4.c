@@ -3,7 +3,7 @@
 int main(){
     int six[6];
     int min = six[0];
-    int max = six[1];
+    int max = six[0];
     for (int i = 0; i < 6; i++){
         scanf("%d", &six[i]);
     }
