@@ -11,7 +11,3 @@ int main(){
     }
     
 }
-
-    int sum(int arr1[4], int arr2[4]){
-        
-    }
