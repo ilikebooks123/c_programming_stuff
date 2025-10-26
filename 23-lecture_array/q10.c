@@ -6,7 +6,7 @@ int main(){
     int t = 0;
 
     for (int i = 0; i < 6; i++){
-        if (boolArray[i] != false){
+        if (boolArray[i] == true){
             printf("%d\n", boolArray[i]);
             t++;
         }

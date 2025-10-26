@@ -2,15 +2,15 @@
 
 int main(){
     long numbers[5] = {1000, 2000, 3000, 4000, 1000};
-    int i = 0;
-    int sum1 = numbers[0];
-
-    for (i = 1; i < 5; i++){
-        
-         if (sum1 == numbers[i+1]){
-            printf("there is a duplicate");
-        }
-        
+    int x = 0;
+    int size = sizeof(numbers)/sizeof(numbers[0]);
+    for (x = 0; x < size; x++){
+        for (int y = x+1; y < size; y++){
+            if (numbers[x] == numbers[y]){
+                printf("There is a duplicate of %d\n", numbers[x]);
+            }
+        } 
+    
     }
     
 }
