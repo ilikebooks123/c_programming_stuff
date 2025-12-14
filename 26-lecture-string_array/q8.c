@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    int n;
+    char confirm;
     char password[] = "";
 
     printf("Please enter a password:");
@@ -9,11 +9,13 @@ int main(){
     while (getchar() != '\n');
     
     printf("Confirm (Y/N):");
-    char confirm = scanf("%c");
+    scanf("%c", &confirm);
     while (getchar() != '\n');
-    printf("%c", password);
+    printf("%d", password);
     
     if (confirm == 'y' || confirm == 'Y'){
+        while (getchar() != '\n');
+        printf("Confirmed\n");
         printf("your password is:");
         for (int i = 0; password[i] != '\0'; i++){
             printf("%c", password[i]);
